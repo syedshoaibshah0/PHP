@@ -1,0 +1,26 @@
+CREATE DATABASE center;
+
+USE center;
+
+CREATE TABLE SINFO (
+    ID INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    FirstName VARCHAR(250) NOT NULL,
+    LastName VARCHAR(250),
+    DateOfBirth DATE,
+    Email VARCHAR(250) UNIQUE,
+    MobileNumber VARCHAR(250) UNIQUE,
+    Gender VARCHAR(250),
+    Address VARCHAR(250),
+    City VARCHAR(250),
+    PINCODE VARCHAR(250),
+    STATE VARCHAR(250),
+    Country VARCHAR(250),
+    Hobbies VARCHAR(250),
+    Courses VARCHAR(250)
+);
+
+SELECT 
+    *
+FROM
+    SINFO;
+	
